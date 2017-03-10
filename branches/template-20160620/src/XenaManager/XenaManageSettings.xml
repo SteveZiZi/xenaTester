@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+	<keepAlive val="30000" /> <!-- 保持XenaManager在线的时间戳 毫秒 -->
+	<waitForRead val="10000" /> <!-- 读回socket数据超时时间 毫秒-->
+	<waitConnected val="1000" /> <!-- socket连接超时时间 毫秒-->
+	<stateUpdate val="1000" />  <!-- xena占用状态更新时间 毫秒-->
+</settings>

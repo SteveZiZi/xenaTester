@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SCL>
+
+  <testGetAddrAttrib>
+    <Address>
+      <P type="OSI-AP-Title">1 3 9999 23</P>
+      <P type="OSI-AE-Qualifier">23</P>
+      <P type="OSI-PSEL">00 00 00 01</P>
+      <P type="OSI-SSEL">00 01</P>
+      <P type="OSI-TSEL">00 01</P>
+      <P type="IP">127.0.0.1</P>
+    </Address>    
+  </testGetAddrAttrib>
+
+  <testReadDOI>
+    <DOI name="Pos" desc="断路器总_从2">
+        <DAI name="stVal" sAddr="10.1.1.3" />
+        <DAI name="q" sAddr="10.1.1.4" />
+        <DAI name="t" sAddr="10.1.1.5" />
+        <DAI name="dU">
+            <Val>断路器总_从2</Val>
+        </DAI>
+    </DOI>    
+  </testReadDOI>
+
+  <testGetGSEAttrib>
+    <GSE cbName="gocb1" ldInst="PI">
+      <Address>
+        <P type="MAC-Address">01-0C-CD-01-08-2D</P>
+        <P type="VLAN-ID">3</P>
+        <P type="APPID">082D</P>
+        <P type="VLAN-PRIORITY">4</P>
+      </Address>
+      <MinTime unit="s" multiplier="m">2</MinTime>
+      <MaxTime unit="s" multiplier="m">5000</MaxTime>
+    </GSE>
+  </testGetGSEAttrib>
+
+  <testGetSubNetworkAttrib>
+    <SubNetwork name="SF-SubNectWork">
+      <ConnectedAP iedName="CM2225" apName="S1">
+        <Private type="TimeInMS">200</Private>
+        <Address>
+          <P type="OSI-AP-Title">1 3 9999 23</P>
+          <P type="OSI-AE-Qualifier">23</P>
+          <P type="OSI-PSEL">00 00 00 01</P>
+          <P type="OSI-SSEL">00 01</P>
+          <P type="OSI-TSEL">00 01</P>
+          <P type="IP">127.0.0.1</P>
+        </Address>
+      </ConnectedAP>
+      <ConnectedAP iedName="CL2211" apName="G1">
+        <Private type="GO1588Port">1</Private>
+        <Private type="SV1588Port">1</Private>
+        <Private type="config3">4000</Private>
+        <Private type="config2">3000</Private>
+        <Private type="config1">4000</Private>
+        <Private type="TimeInMS">200</Private>
+        <GSE desc="" cbName="GoCBDigOut" ldInst="TRIP">
+          <Address>
+            <P type="MAC-Address">01-0C-CD-01-00-10</P>
+            <P type="VLAN-ID">3</P>
+            <P type="VLAN-PRIORITY">4</P>
+            <P type="APPID">0010</P>
+          </Address>
+          <MinTime unit="s" multiplier="m">2</MinTime>
+          <MaxTime unit="s" multiplier="m">5000</MaxTime>
+        </GSE>
+      </ConnectedAP>
+    </SubNetwork>
+  </testGetSubNetworkAttrib>
+
+</SCL>

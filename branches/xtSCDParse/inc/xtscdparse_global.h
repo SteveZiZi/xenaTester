@@ -1,0 +1,12 @@
+#ifndef XTSCDPARSE_GLOBAL_H
+#define XTSCDPARSE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#ifdef XTSCDPARSE_LIB
+# define XTSCDPARSE_EXPORT Q_DECL_EXPORT
+#else
+# define XTSCDPARSE_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // XTSCDPARSE_GLOBAL_H

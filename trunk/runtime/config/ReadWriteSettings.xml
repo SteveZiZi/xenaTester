@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<settings>
+ <port val="22611"/>
+ <!-- 端口号 -->
+ <userName val="Admin"/>
+ <!-- 用户名 长度不能超过8-->
+ <ipAddress val="192.168.0.202"/>
+ <!-- IP地址 -->
+ <password val="xena"/>
+ <!-- 密码-->
+</settings>

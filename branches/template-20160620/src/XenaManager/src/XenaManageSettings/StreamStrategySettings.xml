@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+	<streamEnable val="1" /> <!-- 流的使能状态 填0或1 1为使能 0为不使能 以下相同-->
+	<packetStrategyEnable val="0" /> <!-- 帧数量策略使能状态 填0或1 -->
+	<packets val="0" /> <!-- 帧数量 0~1488095 -->
+	<stepStrategyEnable val="0" /> <!-- 步进策略使能状态 填0或1 -->
+	<beginRate val="1.0" />  <!-- 起始速率 0.0~100.0-->
+	<endRate val="100.0" />  <!-- 结束速率 0.0~100.0-->
+	<stepRate val="1.0" />  <!-- 步进速率 0.0~100.0-->
+	<loopTimes val="0" />  <!-- 循环次数 0~100-->
+</settings>
